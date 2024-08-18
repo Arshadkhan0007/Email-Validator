@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email - Validator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span>E-VALID</span>
+                <img src="img/Email.svg" alt="">
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="header">Enter your email to validate</h1>
+            <form action="/submit" method="post">
+
+                <input placeholder="Enter you Email to validate" class="userEmail" type="text" id="userEmail" name="userEmail" required>
+                <br><br>
+            
+                <!-- Submit button -->
+                <input id="submitbtn" class="btn" type="submit" value="Submit">
+              </form>
+        </div>
+        <div class="container">
+            <h2>Results</h2>
+            <div id="Results" class="Results">
+                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        E-VALID.COM | All Copyright Reserved
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

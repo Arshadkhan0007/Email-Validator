@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=New+Amsterdam&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0px;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+nav {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(8, 53, 53);
+    color: white;
+    padding: 15px
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 15px;
+    font-size: 25px;
+}
+
+ul li a {
+    color: white;
+}
+
+ul > li > a:hover{
+    color:dimgray
+}
+
+footer{
+    font-size: small;
+    background-color:darkslategray;
+    color: white;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    min-height: 90vh;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.container{
+    max-width: 90vw;
+    margin: 15px;
+    padding: 5px;
+}
+.header{
+    margin-bottom: 10px;
+}
+
+div label{
+    font-size:20px;
+}
+
+input[type='text']{
+    min-width: 25vw;
+    min-height: 25px;
+    padding: 3px 12px;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 2px solid gray;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#Results div::first-letter{
+    text-transform: uppercase;
+}
+#Results div{
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        background-color:beige; 
+    }
+    
+    .contianer{
+        font-size:  15px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    ul li a{
+        text-decoration: none;
+    }
+}
